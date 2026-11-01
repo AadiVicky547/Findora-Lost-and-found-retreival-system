@@ -1,0 +1,81 @@
+query_id,item_id,judgment,notes
+Q01,LF001,relevant,Blue water bottle and Central Library location match the query.
+Q01,LF002,relevant,Navy flask is a dark-blue water container at Central Library.
+Q01,LF003,relevant,Reusable blue bottle at Library Garden matches item and nearby location.
+Q01,LF053,not_relevant,Steel flask is at Student Dining Hall and is not blue or near the library.
+Q01,LF054,not_relevant,Green bottle is at Science Building rather than near the library.
+Q01,LF034,not_relevant,Blue notebook near the library is not a bottle.
+Q01,LF028,not_relevant,Blue pen drive is not a bottle.
+Q01,LF030,not_relevant,Textbook at the library is not a bottle.
+Q01,LF012,not_relevant,Backpack is not a bottle and is at Engineering Block.
+Q01,LF011,not_relevant,Backpack is not a bottle and is at the Auditorium.
+Q02,LF009,relevant,Found college ID card at Cafeteria matches item status and location.
+Q02,LF008,ambiguous,The ID card is at Cafeteria but its status is Lost while the query says found; human review should decide whether found describes the desired report status.
+Q02,LF062,ambiguous,Found student identity card is in Student Dining Hall and its description says dining area; confirm whether this location is the queried Cafeteria.
+Q02,LF010,not_relevant,Student access card matches the item class but is at Main Hall rather than Cafeteria.
+Q02,LF043,not_relevant,Bus pass is a transport card rather than a student identity card and is at Bus Stop.
+Q02,LF044,not_relevant,Travel card is not a student identity card and is at Campus Shuttle.
+Q02,LF061,not_relevant,Transit card holder is not an identity card and is at Campus Shuttle.
+Q02,LF040,not_relevant,Lunch container at Cafeteria is not an ID card.
+Q02,LF046,not_relevant,Purse at Campus Canteen is not an ID card.
+Q02,LF068,not_relevant,Food container at Student Dining Hall is not an ID card.
+Q03,LF015,relevant,Black laptop charger is named directly and is at Engineering Block.
+Q03,LF016,relevant,Laptop adapter with a black charger description is at Engineering Block.
+Q03,LF017,ambiguous,Description is a black laptop charging cable with an adapter but location is Technology Centre; verify whether a charging cable qualifies and whether the location condition is strict.
+Q03,LF056,ambiguous,Laptop power adapter and black charger match the item and color but location is Library Study Room; human review should resolve the location requirement.
+Q03,LF007,not_relevant,White earbuds are at Engineering Block but are not a black laptop charger.
+Q03,LF029,not_relevant,Black USB drive is not a laptop charger.
+Q03,LF066,not_relevant,Black computer mouse is not a laptop charger.
+Q03,LF020,not_relevant,Smart watch is not a laptop charger.
+Q03,LF041,not_relevant,Black phone is not a laptop charger.
+Q03,LF018,not_relevant,Calculator is not a laptop charger.
+Q04,LF026,relevant,Keys with red fob are at Sports Ground.
+Q04,LF024,relevant,House keys with red keychain are at Sports Ground.
+Q04,LF025,relevant,Keys with a red tag are at Sports Ground and match the requested key set.
+Q04,LF027,not_relevant,Room key is at Hostel Block B and has no red keychain.
+Q04,LF059,not_relevant,Keys have a green fob and are at Hostel Block C.
+Q04,LF060,not_relevant,Key ring has a blue tag and is at Auditorium.
+Q04,LF021,not_relevant,Red sports jersey is not a key set.
+Q04,LF038,not_relevant,Football is at Sports Ground but is not a key set.
+Q04,LF019,not_relevant,Wrist watch is not a key set.
+Q04,LF037,not_relevant,Tennis racket is not a key set.
+Q05,LF032,relevant,Spiral notebook with calculus lecture notes is at Central Library.
+Q05,LF034,relevant,Lecture notebook with handwritten class notes is at Library Garden.
+Q05,LF033,relevant,Class-notes notebook with mathematics notes is at Central Library.
+Q05,LF030,not_relevant,Physics textbook is at the library but is not a notebook.
+Q05,LF058,not_relevant,Class notebook has notes but is at Classroom Block A rather than the library.
+Q05,LF057,not_relevant,Biology journal is at Science Building rather than the library.
+Q05,LF031,not_relevant,Engineering drawing set is at Design Studio and is not lecture notes in a notebook.
+Q05,LF028,not_relevant,Pen drive is at Library Computer Room but is not a notebook.
+Q05,LF012,not_relevant,Backpack is at Engineering Block and is not a notebook.
+Q05,LF051,not_relevant,Backpack is at Library Entrance but is not a notebook.
+Q06,LF045,relevant,Brown leather wallet is at Cafeteria.
+Q06,LF046,relevant,Black purse is the wallet synonym and is at Campus Canteen.
+Q06,LF047,ambiguous,Canvas wallet matches the item but Student Dining Hall may or may not be the same location intended by canteen; confirm location equivalence.
+Q06,LF009,not_relevant,College ID card is at Cafeteria but is not a wallet or purse.
+Q06,LF040,not_relevant,Lunch container is at Cafeteria but is not a wallet or purse.
+Q06,LF008,not_relevant,Student identity card is at Cafeteria but is not a wallet or purse.
+Q06,LF035,not_relevant,Prescription glasses are at Cafeteria but are not a wallet or purse.
+Q06,LF039,not_relevant,Lunch box is at Cafeteria but is not a wallet or purse.
+Q06,LF068,not_relevant,Food container is at Student Dining Hall but is not a wallet or purse.
+Q06,LF055,not_relevant,USB C charger is at Campus Canteen but is not a wallet or purse.
+Q07,LF007,relevant,"White earbuds are at Engineering Block and match the requested item, color, and place."
+Q07,LF006,ambiguous,Wireless earbuds case contains one earbud but is at Computer Lab; review whether a case/partial pair matches the request.
+Q07,LF016,not_relevant,Laptop adapter is at Engineering Block but is not earbuds and is black.
+Q07,LF015,not_relevant,Laptop charger is at Engineering Block but is not earbuds and is black.
+Q07,LF055,not_relevant,White USB C charger is not earbuds and is at Campus Canteen.
+Q07,LF018,not_relevant,Calculator is not earbuds.
+Q07,LF042,not_relevant,Mobile phone is not earbuds.
+Q07,LF048,not_relevant,Mobile phone is not earbuds.
+Q07,LF049,not_relevant,Smartphone is not earbuds.
+Q07,LF065,not_relevant,Wireless mouse is not earbuds.
+Q08,LF070,relevant,Red boots are reported at Amphitheatre.
+Q08,LF069,ambiguous,Red boots match the item but the location is misspelled as ampitheatre; human review should confirm it refers to Amphitheatre.
+Q08,LF021,not_relevant,Red sports jersey is clothing but not boots and is at Sports Ground.
+Q08,LF022,not_relevant,Blue hoodie is not red boots.
+Q08,LF023,not_relevant,White laboratory coat is not red boots.
+Q08,LF063,not_relevant,Black raincoat is not red boots.
+Q08,LF064,not_relevant,Blue sweatshirt is not red boots.
+Q08,LF004,not_relevant,Red umbrella is not boots and is at Main Gate.
+Q08,LF005,not_relevant,Black umbrella is not red boots.
+Q08,LF037,not_relevant,Tennis racket is not footwear.

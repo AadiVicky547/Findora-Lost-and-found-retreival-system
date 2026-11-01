@@ -1,0 +1,6 @@
+query_id,query,category,location,legacy_relevant_item_ids
+Q01,blue water bottle near library,Drinkware,Library,LF001;LF002;LF003
+Q02,student id card found in cafeteria,ID / Cards,Cafeteria,LF008;LF009;LF010
+Q03,black laptop charger in engineering block,Electronics,Engineering Block,LF015;LF016;LF017
+Q04,keys with red keychain near sports ground,Keys,Sports Ground,LF024;LF025;LF026
+Q05,notebook with lecture notes in library,Books / Stationery,Library,LF032;LF033;LF034

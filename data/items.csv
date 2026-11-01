@@ -1,0 +1,72 @@
+item_id,status,item_name,category,description,location,date,contact
+LF001,Lost,Blue steel water bottle,Drinkware,Matte blue insulated bottle with a small mountain sticker,Central Library,2026-10-20,student001@campus.edu
+LF002,Found,Navy water flask,Drinkware,Dark blue metal flask with silver cap found on a reading desk,Central Library,2026-10-20,helpdesk@campus.edu
+LF003,Lost,Blue plastic bottle,Drinkware,Reusable blue bottle with initials AK written underneath,Library Garden,2026-10-21,student003@campus.edu
+LF004,Found,Red umbrella,Accessories,Compact red folding umbrella with wooden handle,Main Gate,2026-10-18,security@campus.edu
+LF005,Lost,Black umbrella,Accessories,Long black umbrella with curved handle and one bent rib,Bus Stop,2026-10-19,student005@campus.edu
+LF006,Found,Wireless earbuds case,Electronics,White charging case containing one wireless earbud,Computer Lab,2026-10-22,labstaff@campus.edu
+LF007,Lost,White earbuds,Electronics,Pair of white wireless earbuds in a white charging case,Engineering Block,2026-10-22,student007@campus.edu
+LF008,Lost,Student identity card,ID / Cards,College ID card for Riya Sharma with blue lanyard,Cafeteria,2026-10-23,student008@campus.edu
+LF009,Found,College ID card,ID / Cards,Student identity card found beside the cafeteria payment counter,Cafeteria,2026-10-23,cafeteria@campus.edu
+LF010,Found,Student access card,ID / Cards,Plastic campus identity card with photograph in clear sleeve,Main Hall,2026-10-24,admin@campus.edu
+LF011,Lost,Green backpack,Bags,Bottle green backpack with two books and a yellow keychain,Auditorium,2026-10-21,student011@campus.edu
+LF012,Found,Grey laptop backpack,Bags,Grey bag with padded laptop pocket found under a lecture seat,Engineering Block,2026-10-21,security@campus.edu
+LF013,Lost,Canvas tote bag,Bags,Beige tote printed with a blue campus logo,Arts Building,2026-10-20,student013@campus.edu
+LF014,Found,Black spectacles,Accessories,Black rectangular eyeglasses in a hard case,Physics Laboratory,2026-10-25,labstaff@campus.edu
+LF015,Lost,Black laptop charger,Electronics,65 watt laptop power adapter with long cable,Engineering Block,2026-10-22,student015@campus.edu
+LF016,Found,USB C laptop adapter,Electronics,Black charger and cable left beside a computer workstation,Engineering Block,2026-10-23,labstaff@campus.edu
+LF017,Lost,Computer power cable,Electronics,Black laptop charging cable with square adapter,Technology Centre,2026-10-24,student017@campus.edu
+LF018,Found,Scientific calculator,Electronics,Casio scientific calculator with initials written on back,Mathematics Building,2026-10-20,office@campus.edu
+LF019,Lost,Silver wrist watch,Accessories,Round silver watch with dark blue face and leather strap,Gymnasium,2026-10-19,student019@campus.edu
+LF020,Found,Smart watch,Electronics,Black fitness watch with scratched screen,Football Ground,2026-10-20,sportsdesk@campus.edu
+LF021,Lost,Red sports jersey,Clothing,Red team jersey number 12 left after practice,Sports Ground,2026-10-24,student021@campus.edu
+LF022,Found,Blue hoodie,Clothing,Navy blue hooded sweatshirt size medium,Student Centre,2026-10-23,helpdesk@campus.edu
+LF023,Lost,White laboratory coat,Clothing,White lab coat with name tag Arjun,Physics Laboratory,2026-10-25,student023@campus.edu
+LF024,Lost,House keys with red keychain,Keys,Three silver keys attached to a red leather key ring,Sports Ground,2026-10-23,student024@campus.edu
+LF025,Found,Keys and red tag,Keys,Set of keys with a red plastic tag found near the ground entrance,Sports Ground,2026-10-24,sportsdesk@campus.edu
+LF026,Found,Two keys with red fob,Keys,Two small keys on a red keychain handed to security,Sports Ground,2026-10-24,security@campus.edu
+LF027,Lost,Room key,Keys,Single brass key with number 204 label,Hostel Block B,2026-10-22,student027@campus.edu
+LF028,Found,Blue pen drive,Electronics,Blue sixteen gigabyte USB flash drive,Library Computer Room,2026-10-18,library@campus.edu
+LF029,Lost,Black USB drive,Electronics,Small black memory stick containing project files,Computer Lab,2026-10-19,student029@campus.edu
+LF030,Found,Physics textbook,Books / Stationery,Introductory physics book with handwritten notes inside,Library,2026-10-21,library@campus.edu
+LF031,Lost,Engineering drawing set,Books / Stationery,Blue geometry box containing compass and pencils,Design Studio,2026-10-23,student031@campus.edu
+LF032,Lost,Spiral notebook,Books / Stationery,Green notebook with calculus lecture notes,Central Library,2026-10-22,student032@campus.edu
+LF033,Found,Class notes notebook,Books / Stationery,Spiral bound notebook with mathematics notes and diagrams,Central Library,2026-10-23,library@campus.edu
+LF034,Found,Blue lecture notebook,Books / Stationery,Blue ruled notebook containing handwritten class notes,Library Garden,2026-10-24,student034@campus.edu
+LF035,Lost,Prescription glasses,Accessories,Brown round eyeglasses with thin frame,Cafeteria,2026-10-18,student035@campus.edu
+LF036,Found,Silver ring,Accessories,Small silver ring with a blue stone,Main Hall,2026-10-25,security@campus.edu
+LF037,Lost,Tennis racket,Other,Black and yellow racket in a cloth cover,Tennis Court,2026-10-20,student037@campus.edu
+LF038,Found,Football,Other,White and black football left beside the goal,Sports Ground,2026-10-21,sportsdesk@campus.edu
+LF039,Lost,Stainless lunch box,Other,Three tier steel lunch container in a navy cloth bag,Cafeteria,2026-10-24,student039@campus.edu
+LF040,Found,Silver lunch container,Other,Metal food container left on a cafeteria table,Cafeteria,2026-10-24,cafeteria@campus.edu
+LF041,Lost,Phone with cracked screen,Electronics,Black Android phone with a cracked corner and green case,Auditorium,2026-10-25,student041@campus.edu
+LF042,Found,Mobile phone,Electronics,Dark smartphone with lock screen showing a landscape photo,Main Gate,2026-10-25,security@campus.edu
+LF043,Lost,Student bus pass,ID / Cards,Monthly transport card in a transparent wallet,Bus Stop,2026-10-22,student043@campus.edu
+LF044,Found,Blue travel card,ID / Cards,Campus bus pass found on seat number six,Campus Shuttle,2026-10-23,transport@campus.edu
+LF045,Lost,Brown leather wallet,Accessories,Small brown leather wallet with bank cards and a campus library card,Cafeteria,2026-10-26,student045@campus.edu
+LF046,Found,Black purse,Accessories,Black zippered purse containing an identity card and a few coins,Campus Canteen,2026-10-26,cafeteria@campus.edu
+LF047,Lost,Canvas wallet,Accessories,Small blue fabric wallet with a silver snap button,Student Dining Hall,2026-10-27,student047@campus.edu
+LF048,Found,Phone in clear case,Electronics,Mobile phone with clear protective case handed in after class,Science Building,2026-10-26,security@campus.edu
+LF049,Lost,Android smartphone,Electronics,Dark phone with a cracked screen and a campus sticker,Computer Lab,2026-10-27,student049@campus.edu
+LF050,Found,Reading glasses,Accessories,Black eyeglasses in a folded blue case,Campus Canteen,2026-10-27,cafeteria@campus.edu
+LF051,Lost,Small backpack,Bags,Red rucksack with a water bottle in its side pocket,Library Entrance,2026-10-25,student051@campus.edu
+LF052,Found,Blue school bag,Bags,Blue backpack with notebooks left beneath a desk,Classroom Block A,2026-10-26,helpdesk@campus.edu
+LF053,Lost,Steel flask,Drinkware,Silver water bottle with a black screw top,Student Dining Hall,2026-10-26,student053@campus.edu
+LF054,Found,Insulated water bottle,Drinkware,Green metal flask with initials engraved on the base,Science Building,2026-10-27,labstaff@campus.edu
+LF055,Lost,USB C charger,Electronics,White power adapter and charging cable for a phone,Campus Canteen,2026-10-27,student055@campus.edu
+LF056,Found,Laptop power adapter,Electronics,Black charger with a rectangular connector found near the outlets,Library Study Room,2026-10-27,library@campus.edu
+LF057,Lost,Blue journal,Books / Stationery,Blue notebook with handwritten biology notes and a name on the cover,Science Building,2026-10-26,student057@campus.edu
+LF058,Found,Class notebook,Books / Stationery,Spiral notepad with chemistry lecture notes,Classroom Block A,2026-10-27,helpdesk@campus.edu
+LF059,Lost,Keys with green key fob,Keys,Four house keys attached to a green plastic keychain,Hostel Block C,2026-10-26,student059@campus.edu
+LF060,Found,Key ring,Keys,Set of two keys with a blue tag found outside the auditorium,Auditorium,2026-10-27,security@campus.edu
+LF061,Lost,Transit card holder,ID / Cards,Clear wallet sleeve holding a campus bus pass,Campus Shuttle,2026-10-27,student061@campus.edu
+LF062,Found,Student identity card,ID / Cards,College ID badge with a red lanyard found in the dining area,Student Dining Hall,2026-10-25,cafeteria@campus.edu
+LF063,Lost,Black raincoat,Clothing,Long black rain jacket left on a chair after class,Arts Building,2026-10-26,student063@campus.edu
+LF064,Found,Blue sweatshirt,Clothing,Navy hoodie size large found in the gym changing room,Gymnasium,2026-10-27,sportsdesk@campus.edu
+LF065,Lost,Wireless mouse,Electronics,Small grey bluetooth mouse with a USB receiver,Library Study Room,2026-10-26,student065@campus.edu
+LF066,Found,Computer mouse,Electronics,Wireless black mouse found beside a desktop computer,Computer Lab,2026-10-27,labstaff@campus.edu
+LF067,Lost,Stainless lunch box,Other,Metal food container with three compartments and a blue strap,Campus Canteen,2026-10-28,student067@campus.edu
+LF068,Found,Food container,Other,Silver lunch box left on a dining table in the cafeteria,Student Dining Hall,2026-10-28,cafeteria@campus.edu
+LF069,Lost,red boots,Clothing,its like the one ted mosby was obsessed with in HYMYM,ampitheatre,2026-11-01,984756209
+LF070,Found,red boots,Clothing,like the one tb mosby was obsessed with in HYMYM,amphitheatre,2026-11-01,23456789
+LF071,Lost,akshay,ID / Cards,aaa,gutter,2026-11-01,222

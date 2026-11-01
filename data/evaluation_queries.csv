@@ -1,0 +1,9 @@
+query_id,query,category,location,topic
+Q01,blue water bottle near library,Drinkware,Library,Color and bottle/flask synonym with library location
+Q02,student id card found in cafeteria,ID / Cards,Cafeteria,ID/identity-card wording with status and location ambiguity
+Q03,black laptop charger in engineering block,Electronics,Engineering Block,Color charger/adapter synonym and exact campus location
+Q04,keys with red keychain near sports ground,Keys,Sports Ground,Keychain/key fob synonym and color/location match
+Q05,notebook with lecture notes in library,Books / Stationery,Library,Notebook/journal synonym and lecture-note/location match
+Q06,wallet or purse I left in canteen,Any category,Cafeteria,Wallet/purse synonym and canteen/cafeteria location
+Q07,white wireless earbuds in the engineering block,Electronics,Engineering Block,Color and wireless-earbud reports in a different location
+Q08,red boots at the amphitheatre,Clothing,Amphitheatre,Red clothing item and a misspelled location requiring review

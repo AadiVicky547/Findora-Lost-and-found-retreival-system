@@ -1,0 +1,16 @@
+query_id,item_id,legacy_judgment,reviewed_judgment,review_notes
+Q01,LF001,relevant,relevant,Blue water bottle at Central Library.
+Q01,LF002,relevant,relevant,Navy is a blue shade; water flask at Central Library.
+Q01,LF003,relevant,relevant,Reusable blue bottle at Library Garden.
+Q02,LF008,relevant,ambiguous,Matches card and Cafeteria but status is Lost while query includes found.
+Q02,LF009,relevant,relevant,Found student identity card at Cafeteria.
+Q02,LF010,relevant,not_relevant,Student access card is at Main Hall rather than Cafeteria.
+Q03,LF015,relevant,relevant,Black laptop charger at Engineering Block.
+Q03,LF016,relevant,relevant,Laptop adapter and black charger at Engineering Block.
+Q03,LF017,relevant,ambiguous,Strong black laptop charging-cable match but it is at Technology Centre.
+Q04,LF024,relevant,relevant,Red keychain and keys at Sports Ground.
+Q04,LF025,relevant,relevant,Keys with red tag at Sports Ground.
+Q04,LF026,relevant,relevant,Keys with red fob at Sports Ground.
+Q05,LF032,relevant,relevant,Notebook with lecture notes at Central Library.
+Q05,LF033,relevant,relevant,Notebook with class notes at Central Library.
+Q05,LF034,relevant,relevant,Lecture notebook at Library Garden.
