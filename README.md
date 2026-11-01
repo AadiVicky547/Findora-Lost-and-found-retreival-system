@@ -1,4 +1,4 @@
-# Lost and Found Information Retrieval System
+# Findora-Lost and Found Retrieval System
 
 ## Technologies Used
 
