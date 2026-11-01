@@ -1,6 +1,7 @@
 """A small, beginner-friendly lost and found search application."""
 
 from pathlib import Path
+import base64
 import re
 import unicodedata
 
@@ -198,14 +199,49 @@ def add_item(status: str, item_name: str, category: str, description: str, locat
     pd.concat([records, new_row], ignore_index=True).to_csv(DATA_FILE, index=False)
 
 
+REPORT_ILLUSTRATIONS = {
+    "total": """<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 96' fill='none'>
+      <defs><linearGradient id='paper' x1='20' y1='8' x2='88' y2='82' gradientUnits='userSpaceOnUse'><stop stop-color='#fff'/><stop offset='1' stop-color='#c8f4f5'/></linearGradient><linearGradient id='line' x1='31' y1='30' x2='85' y2='70' gradientUnits='userSpaceOnUse'><stop stop-color='#34d5e4'/><stop offset='1' stop-color='#4389f5'/></linearGradient></defs>
+      <path d='M29 18a8 8 0 0 1 8-8h45l17 17v48a8 8 0 0 1-8 8H37a8 8 0 0 1-8-8V18Z' fill='url(#paper)' stroke='#39718c' stroke-width='2.5'/><path d='M82 10v14a4 4 0 0 0 4 4h13' stroke='#39718c' stroke-width='2.5'/><path d='M43 40h39M43 51h31M43 62h36' stroke='url(#line)' stroke-width='4' stroke-linecap='round'/><circle cx='89' cy='64' r='13' fill='#e4fbff' stroke='#4389f5' stroke-width='3'/><path d='M89 57v14M82 64h14' stroke='#1689bd' stroke-width='3' stroke-linecap='round'/><path d='M16 37h9m-4.5-4.5v9M103 43h7m-3.5-3.5v7' stroke='#27bfd4' stroke-width='2' stroke-linecap='round'/>
+    </svg>""",
+    "lost": """<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 96' fill='none'>
+      <defs><linearGradient id='glass' x1='37' y1='12' x2='81' y2='62' gradientUnits='userSpaceOnUse'><stop stop-color='#8af3f1'/><stop offset='1' stop-color='#4a9df5'/></linearGradient></defs>
+      <path d='M60 15c-15 0-27 12-27 27 0 19 27 42 27 42s27-23 27-42c0-15-12-27-27-27Z' fill='#dffbff' stroke='#3186ad' stroke-width='3'/><circle cx='60' cy='42' r='13' fill='url(#glass)' stroke='#23638d' stroke-width='2.5'/><path d='m78 62 20 20' stroke='#173f5e' stroke-width='9' stroke-linecap='round'/><path d='m78 62 20 20' stroke='#39c9dd' stroke-width='4' stroke-linecap='round'/><path d='M16 24h12m-6-6v12M94 21h10m-5-5v10M15 69h10' stroke='#27bfd4' stroke-width='2' stroke-linecap='round'/><circle cx='20' cy='53' r='3' fill='#4389f5'/><circle cx='103' cy='59' r='3' fill='#27bfd4'/>
+    </svg>""",
+    "found": """<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 96' fill='none'>
+      <defs><linearGradient id='box' x1='26' y1='22' x2='88' y2='76' gradientUnits='userSpaceOnUse'><stop stop-color='#d7fbf8'/><stop offset='1' stop-color='#81d9ed'/></linearGradient></defs>
+      <path d='m22 35 38-20 38 20-38 21-38-21Z' fill='#e8fdff' stroke='#28789b' stroke-width='3' stroke-linejoin='round'/><path d='M22 35v35l38 20V56L22 35Z' fill='url(#box)' stroke='#28789b' stroke-width='3' stroke-linejoin='round'/><path d='M98 35v35L60 90V56l38-21Z' fill='#71c9df' stroke='#28789b' stroke-width='3' stroke-linejoin='round'/><path d='m47 22 38 21' stroke='#32b7cc' stroke-width='4' stroke-linecap='round'/><circle cx='88' cy='66' r='18' fill='#eafff4' stroke='#168e91' stroke-width='3'/><path d='m79 66 6 6 12-14' stroke='#168e91' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/><path d='M12 51h8m83-28h8M14 79h8' stroke='#27bfd4' stroke-width='2' stroke-linecap='round'/>
+    </svg>""",
+}
+
+
+def metric_card(label: str, value: int, illustration: str) -> str:
+    """Build a self-contained stat card with a small embedded SVG illustration."""
+    image = base64.b64encode(illustration.encode("utf-8")).decode("ascii")
+    return (
+        '<div class="report-metric-card">'
+        f'<div class="report-metric-copy"><span class="report-metric-label">{label}</span>'
+        f'<strong class="report-metric-value">{value}</strong></div>'
+        f'<img class="report-metric-art" src="data:image/svg+xml;base64,{image}" alt="" />'
+        '</div>'
+    )
+
+
 st.set_page_config(page_title="Campus Lost & Found", page_icon="🔎", layout="wide")
 st.markdown("""
 <style>
-  .block-container {padding-top: 2rem; max-width: 1150px;}
+  header[data-testid="stHeader"], div[data-testid="stToolbar"] {display: none !important;}
+  .block-container {padding-top: .75rem !important; max-width: 1150px;}
   .hero {padding: 1.5rem 1.8rem; border-radius: 16px; background: linear-gradient(120deg,#12304a,#247b83); color: white; margin-bottom: 1.2rem;}
   .hero h1 {margin: 0 0 .35rem 0; color: white;}
   .hero p {margin: 0; opacity: .92;}
-  div[data-testid="stMetric"] {background: #f3f7f8; padding: 1rem; border-radius: 12px;}
+  .report-metric-grid {display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1rem; margin:.25rem 0 1.25rem;}
+  .report-metric-card {box-sizing:border-box; min-height:118px; padding:1rem 1.2rem; display:flex; align-items:center; justify-content:space-between; gap:.75rem; overflow:hidden; border:1px solid rgba(115,220,226,.5); border-radius:16px; background:linear-gradient(135deg,#12304a 0%,#174b62 58%,#247b83 100%); box-shadow:0 8px 20px rgba(12,44,61,.3);}
+  .report-metric-copy {display:flex; flex-direction:column; gap:.55rem; min-width:0;}
+  .report-metric-label {color:#c9edf2 !important; font-size:.95rem; font-weight:650; letter-spacing:.01em;}
+  .report-metric-value {color:#ffffff !important; font-size:2.35rem; font-weight:750; line-height:1;}
+  .report-metric-art {display:block; width:94px; height:82px; flex:0 0 auto; filter:drop-shadow(0 4px 8px rgba(5,24,38,.35));}
+  @media (max-width: 760px) {.report-metric-grid {grid-template-columns:1fr;} .report-metric-card {min-height:100px;}}
 </style>
 <div class="hero"><h1>🔎 Campus Lost &amp; Found</h1><p>Search reports with information retrieval, or add a lost or found item to the shared register.</p></div>
 """, unsafe_allow_html=True)
@@ -213,10 +249,14 @@ st.markdown("""
 items = load_items()
 lost_count = (items["status"] == "Lost").sum()
 found_count = (items["status"] == "Found").sum()
-m1, m2, m3 = st.columns(3)
-m1.metric("Total reports", len(items))
-m2.metric("Lost reports", int(lost_count))
-m3.metric("Found reports", int(found_count))
+st.markdown(
+    '<div class="report-metric-grid">'
+    + metric_card("Total reports", len(items), REPORT_ILLUSTRATIONS["total"])
+    + metric_card("Lost reports", int(lost_count), REPORT_ILLUSTRATIONS["lost"])
+    + metric_card("Found reports", int(found_count), REPORT_ILLUSTRATIONS["found"])
+    + '</div>',
+    unsafe_allow_html=True,
+)
 
 tab_search, tab_report, tab_evaluation, tab_browse = st.tabs(["Search items", "Report an item", "Evaluate the system", "Browse reports"])
 
