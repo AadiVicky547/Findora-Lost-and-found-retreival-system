@@ -1,5 +1,15 @@
 # Lost and Found Information Retrieval System
 
+## Technologies Used
+
+<div align="center">
+  <img alt="Python" src="https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img alt="Streamlit" src="https://img.shields.io/badge/Streamlit-Web%20App-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" />
+  <img alt="scikit-learn" src="https://img.shields.io/badge/scikit--learn-TF--IDF%20%26%20Cosine-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" />
+  <img alt="Pandas" src="https://img.shields.io/badge/Pandas-CSV%20Data-150458?style=for-the-badge&logo=pandas&logoColor=white" />
+  <img alt="Information Retrieval" src="https://img.shields.io/badge/IR-Ranked%20Search-247B83?style=for-the-badge" />
+</div>
+
 A campus web application for reporting lost or found belongings and searching existing reports. Instead of relying on exact keyword matches, it uses Information Retrieval techniques to rank records that are textually similar to a student's description.
 
 This project was created as a beginner-friendly college mini project for an Information Retrieval course. It demonstrates text preprocessing, TF-IDF weighting, cosine similarity, ranked search, CSV data storage, and Precision@K evaluation.
@@ -124,16 +134,6 @@ lost_and_found_IR/
 ## Data and Privacy Note
 
 Item contact information is stored as plain text in the CSV file. Use fictional contact details for demonstrations, and remove private details before sharing or publishing the project. The item reports are classroom sample data and may be edited for your campus.
-
-## Technologies Used
-
-<div align="center">
-  <img alt="Python" src="https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img alt="Streamlit" src="https://img.shields.io/badge/Streamlit-Web%20App-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" />
-  <img alt="scikit-learn" src="https://img.shields.io/badge/scikit--learn-TF--IDF%20%26%20Cosine-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" />
-  <img alt="Pandas" src="https://img.shields.io/badge/Pandas-CSV%20Data-150458?style=for-the-badge&logo=pandas&logoColor=white" />
-  <img alt="Information Retrieval" src="https://img.shields.io/badge/IR-Ranked%20Search-247B83?style=for-the-badge" />
-</div>
 
 ## Author
 
